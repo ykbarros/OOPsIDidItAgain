@@ -1,0 +1,6 @@
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/assemblies/OOPsIDidItAgain.dll
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/assemblies/System.dll
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/assemblies/System.Xml.dll
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/assemblies/Mono.Android.dll
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/assemblies/System.Core.dll
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/assemblies/mscorlib.dll

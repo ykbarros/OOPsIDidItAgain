@@ -1,0 +1,17 @@
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/MonoAndroid,Version=v4.4.AssemblyAttribute.cs
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/bin/Debug/OOPsIDidItAgain.dll.mdb
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/bin/Debug/OOPsIDidItAgain.dll
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/bin/Debug/com.ykimbarros.calculadora.apk
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/android/bin/com.ykimbarros.calculadora.apk
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/res/layout/main.xml
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/res/values/strings.xml
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/res/drawable-hdpi/icon.png
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/res/drawable-mdpi/icon.png
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/res/drawable-xhdpi/icon.png
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/res/drawable-xxhdpi/icon.png
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/res/drawable-xxxhdpi/icon.png
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/R.cs.flag
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/bin/Debug/com.ykimbarros.calculadora-Signed.apk
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/uploadflags.txt
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/OOPsIDidItAgain.dll
+/Users/Yeji/Projects/OOPsIDidItAgain/OOPsIDidItAgain/obj/Debug/OOPsIDidItAgain.dll.mdb
