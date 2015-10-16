@@ -159,7 +159,7 @@ namespace OOPsIDidItAgain
 						operation.Operator = operation.PrevOperator;
 						operation.Operand2 = operation.PrevOperand2;
 					}
-					// normal case of operand 1, operation, operand2, then = presed
+					// operand 1, operation, operand2, then = presed OR prev op result, operation, operand2
 					else {
 							operation.Operand2 = resultView.Text;
 					}
@@ -172,12 +172,13 @@ namespace OOPsIDidItAgain
 				operation.Reset();
 				operation.PrevOperand2 = "";
 				operation.PrevOperator = "";
-				resultView.Text = operation.CalcView; // clear resultView
+				resultView.Text = operation.CalcView;
 			} ;
 
 			// only one point allowed per input
 			point.Click += (sender, e) => {
-				if (operation.CalcView.Contains(".")) // if there is already a point there, don't add another one
+				// if there is already a point there, don't add another
+				if (operation.CalcView.Contains("."))
 					operation.CalcView += "";
 				else {
 					operation.CalcView += ".";
@@ -232,7 +233,7 @@ namespace OOPsIDidItAgain
 				operation.TwoOperands();
 			}
 			if (!(operation.CalcView == "ERROR")) { 
-				/* if calculation was successful, save result, operator and operand2
+				/* if calculation was successful:
 				 *    result saved into CalcView to be rendered on screen
 				 *    operator and operand2 saved into Prev for 2nd if in EqualsSign pressed;
 				 * 		i.e., result is x and equals sign pressed again (repeat last operation with x).
@@ -242,22 +243,22 @@ namespace OOPsIDidItAgain
 				operation.PrevOperand2 = operation.Operand2;
 			}
 			resultView.Text = operation.CalcView; // render view
-			if (!operation.Singleton) {
+			if (!operation.Singleton) { // if the calculator just did a 2 operand calculation...
 				// don't reset Singleton ops, it may be used as an operand; need to keep info intact.
 				operation.Reset (); 
-				operation.CalcView = resultView.Text;
+				operation.CalcView = resultView.Text; // match calcView with what's on the screen
 			}
-			operation.Singleton = false; // reset flag
+			operation.Singleton = false; // reset single op flag
 		}
 		void numEventHandler(object sender, TextView resultView) {
 			Button btn = (Button)sender;
-			// if there is a num from prev. calculation or the first operand, erase
+			// if there is a num from prev. calculation, the first operand or an error, erase
 			if (operation.CalcView.Equals (operation.Result) ||
 			    operation.CalcView.Equals (operation.Operand1) ||
 			    resultView.Text.Equals ("ERROR"))
 				operation.CalcView = "";
 			operation.CalcView += btn.Text; // add onto existing number (e.g., 5 was pressed, then 2 --> 52)
-			resultView.Text = operation.CalcView;
+			resultView.Text = operation.CalcView; // render view
 		}
 		void operatorEventHandler(object sender, TextView resultView) {
 			Button btn = (Button)sender;

@@ -1,15 +1,10 @@
-﻿<Properties StartupItem="OOPsIDidItAgain/OOPsIDidItAgain.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus_4_(KitKat)_4.4.2_API_19" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OOPsIDidItAgain/Calculator.cs">
+﻿<Properties StartupItem="OOPsIDidItAgain/OOPsIDidItAgain.csproj" GitUserInfo="UsingGIT">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus_5_(KitKat)_4.4.2_API_19" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="OOPsIDidItAgain/MainActivity.cs">
     <Files>
-      <File FileName="OOPsIDidItAgain/Calculator.cs" Line="71" Column="72" />
-      <File FileName="OOPsIDidItAgain/MainActivity.cs" Line="11" Column="22" />
+      <File FileName="OOPsIDidItAgain/MainActivity.cs" Line="258" Column="29" />
+      <File FileName="OOPsIDidItAgain/Calculator.cs" Line="70" Column="18" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
