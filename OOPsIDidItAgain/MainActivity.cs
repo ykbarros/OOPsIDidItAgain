@@ -149,12 +149,12 @@ namespace OOPsIDidItAgain
 			// Calculation with two operands (x +-/* y = )
 			equalsSign.Click += (sender, e) => {
 				// pressed number and then equals sign; identity x = x.
-				if (operation.Operand1 == "" && operation.Result == "" && resultView.Text.Length > 0) {
+				if (operation.Operand1 == "" && resultView.Text.Length > 0) {
 					resultView.Text = operation.CalcView;
 				}
 				else {
 					// previous operation result on screen then pressed = --> continue to apply same operation
-					if (resultView.Text == operation.Result && !(operation.PrevOperand2 == "")){
+					if (resultView.Text.Length > 0 && operation.Operand1 == ""){
 						operation.Operand1 = resultView.Text;
 						operation.Operator = operation.PrevOperator;
 						operation.Operand2 = operation.PrevOperand2;
