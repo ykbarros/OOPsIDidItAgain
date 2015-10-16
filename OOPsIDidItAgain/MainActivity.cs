@@ -217,7 +217,7 @@ namespace OOPsIDidItAgain
 
 		/* 
 		 * Methods:
-		 * 
+		 * 	 private access to:
 		 *  void Operation(object sender, TextView resultView) = Calculates the single or 2 operands.
 		 *  void numEventHandler(object sender, TextView resultView) = Action for when a number is pressed.
 		 *  void operatorEventHandler(object sender, TextView resultView) = Action for when an operator is pressed.

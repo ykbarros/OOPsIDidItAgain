@@ -5,8 +5,7 @@ namespace OOPsIDidItAgain
 {
 	public class Calculator
 	{
-		public Calculator() {
-			// public constructor
+		internal Calculator() {
 			CalcView = "";
 			Operand1 = "";
 			Operator = "";
@@ -14,16 +13,16 @@ namespace OOPsIDidItAgain
 			Result = "";
 			Singleton = false;
 		}
-		public string CalcView { get; set; } // Current Calculator View
-		public string Operand1 { get; set; }
-		public string Operator { get; set; }
-		public string Operand2 { get; set; }
-		public string Result { get; set; }
-		public bool Singleton { get; set; } // Two Operand Operation or no?
-		public string PrevOperator { get; set; }
-		public string PrevOperand2 { get; set; }
+		internal string CalcView { get; set; } // Current Calculator View
+		internal string Operand1 { get; set; }
+		internal string Operator { get; set; }
+		internal string Operand2 { get; set; }
+		internal string Result { get; set; }
+		internal bool Singleton { get; set; } // Two Operand Operation or no?
+		internal string PrevOperator { get; set; }
+		internal string PrevOperand2 { get; set; }
 
-		public void Reset() {
+		internal void Reset() {
 			// Erase everything
 			CalcView = "";
 			Operand1 = "";
@@ -31,7 +30,7 @@ namespace OOPsIDidItAgain
 			Operand2 = "";
 			Singleton = false;
 		}
-		public void TwoOperands(){
+		internal void TwoOperands(){
 			double op1 = 0.0;
 			double op2 = 0.0;
 			double doubResult = 0.0;
@@ -66,7 +65,7 @@ namespace OOPsIDidItAgain
 			this.Result = doubResult.ToString();
 		}
 
-		public void SingleOperation(string action, TextView resultView) {
+		internal void SingleOperation(string action, TextView resultView) {
 			double op1 = 0.0; 
 			// can't operate on nothing and error or 0 can neither be pos or neg
 			if (CalcView.Length == 0 || (CalcView == "0" && action == "+/-") ||
