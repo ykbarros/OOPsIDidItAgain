@@ -63,6 +63,9 @@ namespace OOPsIDidItAgain
 			// aapt resource value: 0x7f050018
 			public const int addition = 2131034136;
 			
+			// aapt resource value: 0x7f050020
+			public const int calcHistory = 2131034144;
+			
 			// aapt resource value: 0x7f050003
 			public const int clear = 2131034115;
 			
@@ -125,6 +128,9 @@ namespace OOPsIDidItAgain
 			
 			// aapt resource value: 0x7f05001a
 			public const int row5 = 2131034138;
+			
+			// aapt resource value: 0x7f05001f
+			public const int row6 = 2131034143;
 			
 			// aapt resource value: 0x7f050009
 			public const int seven = 2131034121;

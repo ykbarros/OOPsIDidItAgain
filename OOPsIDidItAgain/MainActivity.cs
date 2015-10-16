@@ -14,11 +14,11 @@ namespace OOPsIDidItAgain
 		Button zero, one, two, three, four, five, six, seven, eight, nine;
 		Button point, signChange, percent;
 		Button divide, multiply, subtract, addition, equalsSign;
-		Button sine, cosine, tangent, sqrt;
-		Button pi, clear;
+		Button sine, cosine, tangent, sqrt, pi, clear, calcHistory;
 		TextView resultView;
 
 		Calculator operation = new Calculator();
+		StackHistory history = new StackHistory();
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -53,6 +53,8 @@ namespace OOPsIDidItAgain
 			pi = FindViewById<Button> (Resource.Id.pi);
 			equalsSign = FindViewById<Button> (Resource.Id.equalsSign);
 			resultView = FindViewById<TextView> (Resource.Id.resultView);
+			calcHistory = FindViewById<Button> (Resource.Id.calcHistory);
+			calcHistory.Enabled = false;
 
 			// numEventHandler
 			zero.Click += (sender, e) => {
@@ -196,22 +198,30 @@ namespace OOPsIDidItAgain
 			sqrt.Click += (sender, e) => {
 				bool negflag = false;
 				// can't find sq root of nothing, error or complex numbers (with i)
-				if (resultView.Text.Length == 0 || resultView.Text == "ERROR" || resultView.Text.Contains("i")) 
+				if (resultView.Text.Length == 0 || resultView.Text == "ERROR" || resultView.Text.Contains ("i"))
 					resultView.Text = "ERROR";
 				else {
 					if (resultView.Text == operation.Result) //previous calculation left behind and sq root pressed
 						operation.CalcView = operation.Result;
-					Double doubnum = Convert.ToDouble(operation.CalcView);
+					Double doubnum = Convert.ToDouble (operation.CalcView);
 					if (doubnum < 0) { // set negative flag on and change neg to positive numbers
 						negflag = true;
 						doubnum *= -1;
 					}
-					operation.Result = (Math.Sqrt(doubnum)).ToString();
-					if (negflag) operation.Result += "i"; //if negative on concatenate imaginary i					resultView.Text = "";
+					operation.Result = (Math.Sqrt (doubnum)).ToString ();
+					if (negflag)
+						operation.Result += "i"; //if negative on concatenate imaginary i					resultView.Text = "";
 					operation.CalcView = operation.Result;
 					resultView.Text = operation.CalcView;
 				}
-			} ;
+			};
+
+			calcHistory.Click += (sender, e) =>
+			{
+				var intent = new Intent(this, typeof(HistoryActivity));
+
+				StartActivity(intent);
+			};
 		}
 
 		/* 
@@ -230,6 +240,9 @@ namespace OOPsIDidItAgain
 			}
 			else { // x (+-/*) y =
 				operation.TwoOperands();
+				// add the x + y operation into calculation history as "x,+,y"
+				history.push(operation.Operand1 +
+					"," + operation.Operator + "," + operation.Operand2);
 			}
 			if (!(operation.CalcView == "ERROR")) { 
 				/* if calculation was successful, save result, operator and operand2

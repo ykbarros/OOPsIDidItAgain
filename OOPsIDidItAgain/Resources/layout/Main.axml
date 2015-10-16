@@ -187,4 +187,18 @@
             android:layout_height="wrap_content"
             android:id="@+id/tangent" />
     </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/row6">
+        <Button
+            android:text="History"
+            android:layout_width="325dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/calcHistory" />
+    </LinearLayout>
 </LinearLayout>

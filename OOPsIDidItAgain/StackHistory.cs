@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace OOPsIDidItAgain
 {
-	public class StackHistory<T>
+	public class StackHistory
 	{
 		private Node first; // top of the stack
 

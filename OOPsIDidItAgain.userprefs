@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="OOPsIDidItAgain/OOPsIDidItAgain.csproj" GitUserInfo="UsingGIT">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.Nexus_4_(KitKat)_4.4.2_API_19" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="OOPsIDidItAgain/Calculator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="OOPsIDidItAgain/StackHistory.cs">
     <Files>
-      <File FileName="OOPsIDidItAgain/Calculator.cs" Line="71" Column="72" />
-      <File FileName="OOPsIDidItAgain/MainActivity.cs" Line="1" Column="1" />
+      <File FileName="OOPsIDidItAgain/StackHistory.cs" Line="8" Column="21" />
+      <File FileName="OOPsIDidItAgain/Calculator.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -15,6 +15,7 @@ public final class R {
     }
     public static final class id {
         public static final int addition=0x7f050018;
+        public static final int calcHistory=0x7f050020;
         public static final int clear=0x7f050003;
         public static final int cosine=0x7f050019;
         public static final int divide=0x7f050006;
@@ -36,6 +37,7 @@ public final class R {
         public static final int row3=0x7f05000e;
         public static final int row4=0x7f050014;
         public static final int row5=0x7f05001a;
+        public static final int row6=0x7f05001f;
         public static final int seven=0x7f050009;
         public static final int signChange=0x7f050004;
         public static final int sine=0x7f050013;
